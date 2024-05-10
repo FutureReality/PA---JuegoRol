@@ -20,22 +20,30 @@ import java.util.Scanner;
 // Creamos la clase personaje
 public class personaje  {
 
+	static String nombre;
+    static int vida;
+    static int mana;
+    static int nivel;
+    static int fuerza;
+    static int vitalidad;
+    static int agilidad;
+    static int sigilo;
 
 //Aqui se solicita el nombre del personaje al jugador
 	static void nombre() {
 
 		Scanner myObj = new Scanner(System.in);
 		System.out.println("Selcciona el nombre de personaje!");
-		String nombre = myObj.nextLine();
+		nombre = myObj.nextLine();
 
 	}
 
 //Se asignan valores por defecto al personaje
 	static void estado() {
 
-		int vida = 100;
-		int mana = 50;
-		int nivel = 1;
+		vida = 100;
+		mana = 50;
+		nivel = 1;
 
 	}
 
@@ -46,22 +54,23 @@ public class personaje  {
 		Scanner myObj = new Scanner(System.in);
 		
 		System.out.println("Puntos a fuerza: ");
-		int fuerza = myObj.nextInt();
+		fuerza = myObj.nextInt();
 
 		System.out.println("Puntos a vitalidad: ");
-		int vitalidad = myObj.nextInt();
+		vitalidad = myObj.nextInt();
 		
 		System.out.println("Puntos a agilidad: ");
-		int agilidad = myObj.nextInt();
+		agilidad = myObj.nextInt();
 
 		System.out.println("Puntos a sigilo: ");
-		int sigilo = myObj.nextInt();
+		sigilo = myObj.nextInt();
+
 
 
 	}
 
 //Llamamos a los metodos	
-	public static void main() {
+	public static void main(String[] args) {
 
 		nombre();
 		estado();
