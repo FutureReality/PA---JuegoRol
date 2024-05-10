@@ -1,4 +1,5 @@
-import java.util.Scanner;
+import java.util.HashMap;
+
 
 /*
 {}
@@ -18,21 +19,35 @@ clase objetos:
 	.
 */
 
+
+//Los atributos de un objeto; los que vayamos a crear
 public class objetos {
 	
-	static String nombre;
+	String nombre;
 	
-	static int armadura;
-	static int daño;
-	static int gasto_mana;
+	int armadura;
+	int danyo;
+	int gasto_mana;
 	
-	static String desc;
-	
-	static void nombre() {
-		
-		
-		
-	}
-	
+	String desc;
 	
 }
+
+  // Creamos instancias; algunos objetos
+
+objetos espada = new objetos();
+espada.nombre = "Espada";
+espada.armadura = 0;
+espada.danyo = 5;
+espada.gasto_mana = 0;
+espada.desc = "Una espada de toda la vida";
+mapObj.put(espada.nombre, espada);
+
+objetos armadura = new objetos();
+armadura.nombre = "casco de hierro";
+armadura.armadura = 5;
+armadura.danyo = 0;
+armadura.gasto_mana = 0;
+armadura.desc = "Un casco *clonk* *clonk*";
+mapObj.put(armadura.nombre, armadura);
+
